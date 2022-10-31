@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="title">husnian</p>
+    <button onclick="checkName()">Check name</button>
+    <script>
+      function checkName() {
+        const title = document.getElementById("title").innerText;
+        // if (title === "husnain") {
+        // } else {
+        //   document.getElementById("title").innerText = "husnain";
+        // }
+        if (title !== "husnain") {
+          document.getElementById("title").innerText = "husnain";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 0;
+        height: 0;
+        background: white;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" >
+      <h1 id="title">Fatima</h1>
+      <button onclick="changeColor()" id="btn">changeBgColor</button>
+    </div>
+    <script>
+      function changeColor() {
+        const containerDiv = document.getElementById("container");
+        const currentColor =
+          window.getComputedStyle(containerDiv).backgroundColor;
+        if (currentColor == "rgb(255, 255, 255)") {
+          document.getElementById("container").style.backgroundColor = "black";
+          document.getElementById("title").style.color = "white";
+        }
+        if (currentColor == "rgb(0, 0, 0)") {
+          document.getElementById("container").style.backgroundColor = "white";
+          document.getElementById("title").style.color = "black";
+        }
+      }
+    </script>
+  </body>
+</html>
